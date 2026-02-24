@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -16,27 +16,27 @@
   />
   <style>
     :root {
-      --bg: #f3efe6;
-      --bg-soft: #fffaf2;
-      --bg-grad-a: #f3efe6;
-      --bg-grad-b: #fcf7ee;
-      --bg-grad-c: #ede7dc;
-      --bg-radial-brand: rgba(255, 90, 31, 0.2);
-      --bg-radial-teal: rgba(31, 143, 150, 0.2);
-      --ink: #111111;
-      --muted: #5b5f67;
-      --brand: #ff5a1f;
-      --brand-deep: #cb3f0f;
-      --teal: #1f8f96;
+      --bg: #f3f6fb;
+      --bg-soft: #f8fbff;
+      --bg-grad-a: #f3f6fb;
+      --bg-grad-b: #edf3ff;
+      --bg-grad-c: #e8eef9;
+      --bg-radial-brand: rgba(37, 99, 235, 0.22);
+      --bg-radial-teal: rgba(14, 165, 233, 0.18);
+      --ink: #0f172a;
+      --muted: #475569;
+      --brand: #2563eb;
+      --brand-deep: #1e40af;
+      --teal: #0ea5e9;
       --surface: rgba(255, 255, 255, 0.85);
       --surface-soft: rgba(255, 255, 255, 0.7);
       --surface-ghost: rgba(255, 255, 255, 0.55);
       --tag-bg: rgba(255, 255, 255, 0.8);
-      --tag-ink: #373b43;
+      --tag-ink: #334155;
       --card: rgba(255, 255, 255, 0.8);
-      --line: rgba(17, 17, 17, 0.14);
-      --dot: rgba(17, 17, 17, 0.2);
-      --noise: rgba(17, 17, 17, 0.09);
+      --line: rgba(15, 23, 42, 0.14);
+      --dot: rgba(15, 23, 42, 0.2);
+      --noise: rgba(15, 23, 42, 0.08);
       --brand-ring: #ffffff;
       --radius-lg: 28px;
       --radius-md: 18px;
@@ -46,23 +46,23 @@
     }
 
     body[data-theme="dark"] {
-      --bg: #0c1016;
-      --bg-soft: #121923;
-      --bg-grad-a: #0b0f15;
-      --bg-grad-b: #121925;
-      --bg-grad-c: #0f141d;
-      --bg-radial-brand: rgba(255, 90, 31, 0.22);
-      --bg-radial-teal: rgba(31, 143, 150, 0.24);
-      --ink: #eef2fa;
-      --muted: #b6c0d2;
-      --surface: rgba(13, 20, 32, 0.84);
-      --surface-soft: rgba(14, 22, 34, 0.74);
-      --surface-ghost: rgba(18, 28, 42, 0.72);
-      --tag-bg: rgba(16, 25, 39, 0.82);
-      --tag-ink: #dbe6f8;
-      --card: rgba(14, 22, 34, 0.8);
-      --line: rgba(215, 226, 247, 0.2);
-      --dot: rgba(229, 237, 251, 0.34);
+      --bg: #080f1f;
+      --bg-soft: #0e172d;
+      --bg-grad-a: #080f1f;
+      --bg-grad-b: #0d1730;
+      --bg-grad-c: #0a1327;
+      --bg-radial-brand: rgba(56, 189, 248, 0.2);
+      --bg-radial-teal: rgba(96, 165, 250, 0.2);
+      --ink: #e5efff;
+      --muted: #9db0d0;
+      --surface: rgba(11, 22, 45, 0.84);
+      --surface-soft: rgba(13, 25, 50, 0.74);
+      --surface-ghost: rgba(16, 31, 59, 0.72);
+      --tag-bg: rgba(14, 27, 52, 0.82);
+      --tag-ink: #d7e7ff;
+      --card: rgba(13, 25, 50, 0.8);
+      --line: rgba(203, 224, 255, 0.2);
+      --dot: rgba(221, 234, 255, 0.34);
       --noise: rgba(255, 255, 255, 0.08);
       --brand-ring: rgba(14, 22, 34, 0.95);
       --shadow-lg: 0 30px 50px rgba(0, 0, 0, 0.45);
@@ -140,7 +140,7 @@
       aspect-ratio: 1;
       border-radius: 50%;
       background:
-        conic-gradient(from 120deg, var(--brand), #ff916a, var(--teal), #5fd7dc, var(--brand));
+        conic-gradient(from 120deg, var(--brand), #60a5fa, var(--teal), #22d3ee, var(--brand));
       box-shadow: 0 0 0 3px var(--brand-ring), 0 8px 14px rgba(0, 0, 0, 0.2);
     }
 
@@ -202,11 +202,11 @@
     .btn-primary {
       color: #ffffff;
       background: linear-gradient(120deg, var(--brand), var(--brand-deep));
-      box-shadow: 0 10px 24px rgba(203, 63, 15, 0.3);
+      box-shadow: 0 10px 24px rgba(37, 99, 235, 0.32);
     }
 
     .btn-primary:hover {
-      box-shadow: 0 18px 30px rgba(203, 63, 15, 0.35);
+      box-shadow: 0 18px 30px rgba(37, 99, 235, 0.36);
     }
 
     .btn-ghost {
@@ -265,7 +265,7 @@
       bottom: 0.1em;
       width: 100%;
       height: 0.18em;
-      background: linear-gradient(90deg, rgba(255, 90, 31, 0.2), rgba(255, 90, 31, 0));
+      background: linear-gradient(90deg, rgba(37, 99, 235, 0.2), rgba(37, 99, 235, 0));
       z-index: -1;
     }
 
@@ -333,7 +333,7 @@
     .hero-panel::before {
       width: 160px;
       aspect-ratio: 1;
-      background: rgba(255, 90, 31, 0.12);
+      background: rgba(37, 99, 235, 0.12);
       top: -50px;
       right: -40px;
     }
@@ -341,7 +341,7 @@
     .hero-panel::after {
       width: 120px;
       aspect-ratio: 1;
-      background: rgba(31, 143, 150, 0.15);
+      background: rgba(14, 165, 233, 0.15);
       bottom: -45px;
       left: -30px;
     }
@@ -367,15 +367,15 @@
     }
 
     .dotline i:nth-child(1) {
-      background: #ff8461;
+      background: #60a5fa;
     }
 
     .dotline i:nth-child(2) {
-      background: #ffbf66;
+      background: #fbbf24;
     }
 
     .dotline i:nth-child(3) {
-      background: #61c97b;
+      background: #22d3ee;
     }
 
     .build-card {
@@ -469,7 +469,7 @@
       inset: auto -30% -75% -30%;
       height: 140px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(255, 90, 31, 0.14), transparent 70%);
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.14), transparent 70%);
       pointer-events: none;
     }
 
